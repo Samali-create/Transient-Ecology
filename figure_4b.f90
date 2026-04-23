@@ -26,7 +26,7 @@
      K=1.0d0;	
 	 eps1=0.00001d0 
 
-open(10,file='global_network.dat')
+open(10,file='figure_2a.dat')
   do i=1,n
     read(10,*)(A1(i,j),j=1,n)
   end do
@@ -47,7 +47,7 @@ do i1=1,n
 end do     
 close(1000)
 
-open(200,file='eps_value.dat')
+open(200,file='figure_2d_2e_2f.dat')
 do j1=1,81
 	read(200,*) coup(j1)
 enddo
