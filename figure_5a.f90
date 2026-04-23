@@ -24,7 +24,7 @@
          xx1=rand()
       end do
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  open(10,file='random_network.dat')   ! adjacency matrix
+  open(10,file='figure_2b.dat')   ! adjacency matrix
   do i=1,n
     read(10,*)(A1(i,j),j=1,n)
   end do
