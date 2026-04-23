@@ -20,14 +20,14 @@ open(42,file='p_tseries.dat')
 !open(43,file='r16_bif.dat')
 open(44,file='error.dat')
 
-open(2,file='initial_condition.dat')
+open(2,file='long_initial_condition.dat')
  do i=1,n
 	read(2,*)R10(i),C10(i),P10(i)
  end do
  close(2)
 
 
-open(5,file='global_network.dat')
+open(5,file='figure_2a.dat')
  do i=1,n 
 	read(5,*) a(i,:)
  end do
@@ -41,7 +41,7 @@ do i= 1,n
 	end do
 enddo
 
-open(20,file='eps_value.dat')
+open(20,file='figure_2d_2e_2f.dat')
 do j1=1,81
    read(20,*)xx
    coup(j1)=xx
