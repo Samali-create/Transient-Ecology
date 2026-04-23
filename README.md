@@ -1,4 +1,3 @@
-Fortran and Python codes has been used for the manuscript "Dispersal-induced survival of predators in metacommunities due to transient chaos".
 dynamics.f90: this code has been used for observing the nature of dynamical behavior as well as the synchronization error calculation for the proposed model in the manuscript.
 single_system_bifurcation.f90: This code has been employed to make the bifurcation diagram for the uncoupled system dynamics.
 msf.f90: this code has been used for calculating the maximum Lyapunov exponent.
