@@ -1,13 +1,37 @@
-figure_1a.f90: This code generates bifurcation diagram of the predator for the uncoupled system to characterize local dynamics.
-figure_2a.dat: Network adjacency matrix for globally connected network of 20 patches (G1).
-figure_2b.dat: Network adjacency matrix for G2.
-figure_2c.dat: Network adjacency matrix for G3.
-figure_2d_2e_2f.dat: This file consists the values of \epsilon_c and \epsilon_p.
-figure_2d_2e_2f_5a_initial_condition.f90: Initial conditions sampled from state-space regions where predator populations persist for a long time iteration.
-figure_2d.f90: This code calculates the mean transient time in \epsilon_c-\epsilon_p plane for network G1.
-figure_3a.f90: This code generates the time seris for predators for the network G1.
-figure_4b.f90: The primary simulation has been used to calculate the synchronization errors of the proposed model.
-figure_4c.f90: This code computes the Master Stability Function and the Maximum Lyapunov Exponent (MLE) to quantify system stability of synchronized state.
-figure_5a.f90: This code has been used to perform global stability analysis of the synchronized state by mapping basins of attraction.
-figure_5c.py: This code visualizes the chaotic saddle using Poincaré section on C-plane for the R-P dynamics.
+# File Descriptions
 
+- `figure_1a.f90`  
+  Generates the bifurcation diagram of the predator population for the uncoupled system, used to characterize the local dynamics.
+
+- `figure_2a.dat`  
+  Adjacency matrix for the globally connected network of 20 patches (G1).
+
+- `figure_2b.dat`  
+  Adjacency matrix for network G2.
+
+- `figure_2c.dat`  
+  Adjacency matrix for network G3.
+
+- `figure_2d_2e_2f.dat`  
+  Contains the parameter values of the coupling strength \( \epsilon_c \) and the predation parameter \( \epsilon_p \).
+
+- `figure_2d_2e_2f_5a_initial_condition.f90`  
+  Generates initial conditions sampled from regions of the phase space where predator populations persist over long transient times.
+
+- `figure_2d.f90`  
+  Computes the mean transient time in the \( \epsilon_c - \epsilon_p \) parameter plane for network G1.
+
+- `figure_3a.f90`  
+  Generates time series of predator populations for network G1.
+
+- `figure_4b.f90`  
+  Performs the primary simulations used to compute synchronization errors of the proposed networked system.
+
+- `figure_4c.f90`  
+  Computes the Master Stability Function (MSF) and the Maximum Lyapunov Exponent (MLE) to quantify the stability of the synchronized state.
+
+- `figure_5a.f90`  
+  Performs global stability analysis of the synchronized state by mapping basins of attraction.
+
+- `figure_5c.py`  
+  Visualizes the chaotic saddle using a Poincaré section on the \( C \)-plane for the Resource–Predator (R–P) dynamics.
