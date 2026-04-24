@@ -13,7 +13,7 @@
         xxx=rand()
       end do
      
-     open(123,file='tt_basin_init.dat')
+     open(123,file='initial_condition.dat')
 		
      nt=10000000
 !      tr= 990000
