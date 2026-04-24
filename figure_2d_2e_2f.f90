@@ -32,7 +32,7 @@ open(100,file='ps.txt')
       end do
     end do
               
-   open(1000,file='long_ic.dat')   !initial condition
+   open(1000,file='initial_condition.dat.dat')   !initial condition
      do i=1,n
        read(1000,*)xx,yy,zz
        R00(i)=xx
@@ -41,7 +41,7 @@ open(100,file='ps.txt')
      end do     
    CLOSE(1000)
 
-   open(90,file='eps.dat')   !epsilon_1 & epsilon_2
+   open(90,file='figure_2d_2e_2f.dat')   !epsilon_1 & epsilon_2
      do i=1,73
        read(90,*)xxx
        coup(i)=xxx
