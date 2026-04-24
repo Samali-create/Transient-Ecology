@@ -1,4 +1,4 @@
-figure_1a.f90: Generates bifurcation diagrams for the uncoupled system to characterize local dynamics.
+figure_1a.f90: This code generates bifurcation diagram of the predator for the uncoupled system to characterize local dynamics.
 figure_2a.dat: Network adjacency matrix for globally connected network of 20 patches (G1).
 figure_2b.dat: Network adjacency matrix for G2.
 figure_2c.dat: Network adjacency matrix for G3.
