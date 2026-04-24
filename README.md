@@ -9,5 +9,5 @@ figure_3a.f90: This code generates the time seris for predators for the network 
 figure_4b.f90: The primary simulation has been used to calculate the synchronization errors of the proposed model.
 figure_4c.f90: This code computes the Master Stability Function and the Maximum Lyapunov Exponent (MLE) to quantify system stability of synchronized state.
 figure_5a.f90: This code has been used to perform global stability analysis of the synchronized state by mapping basins of attraction.
-figure_5c.py: This code visualizes the chaotic saddle using Poincaré sections for the Resource-Consumer-Predator (RCP) dynamics.
+figure_5c.py: This code visualizes the chaotic saddle using Poincaré section on C-plane for the R-P dynamics.
 
