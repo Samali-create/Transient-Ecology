@@ -35,3 +35,5 @@
 
 - `figure_5c.py`  
   Visualizes the chaotic saddle using a Poincaré section on the \( C \)-plane for the Resource–Predator (R–P) dynamics.
+
+  **Note** : All the remaining figures are computed with the programs which are already provided. We have used **Matlab** for plotting the data files generated from the above codes.
