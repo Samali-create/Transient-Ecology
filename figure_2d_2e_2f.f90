@@ -1,4 +1,4 @@
-!This program is for eps_1 vs eps_2 and result: mean transient time (sw)
+This program is for epsilon_c vs epsilon_p and result: mean transient time (G1)
      implicit none
 	 integer,parameter:: n=20, nt=10**7
      integer :: i,j,i1,j1,j2,ISEED,IRAND,TT,count(100),n,nt  
@@ -19,7 +19,7 @@ tot_deg,link_no,R1(100),C1(100),P1(100),transient_time(100),xxx,coup(200),avg_TT
 
 open(100,file='ps.txt')
 
-  open(10,file='figure_2a.txt')   ! adjacency matrix
+  open(10,file='figure_2a.dat')   ! adjacency matrix for G1
   do i=1,n
     read(10,*)(A1(i,j),j=1,n)
   end do
@@ -32,7 +32,7 @@ open(100,file='ps.txt')
       end do
     end do
               
-   open(1000,file='initial_condition.dat.dat')   !initial condition
+   open(1000,file='initial_condition.dat')   !initial condition
      do i=1,n
        read(1000,*)xx,yy,zz
        R00(i)=xx
@@ -41,7 +41,7 @@ open(100,file='ps.txt')
      end do     
    CLOSE(1000)
 
-   open(90,file='figure_2d_2e_2f.dat')   !epsilon_1 & epsilon_2
+   open(90,file='figure_2d_2e_2f.dat')   !epsilon_c & epsilon_p
      do i=1,73
        read(90,*)xxx
        coup(i)=xxx
