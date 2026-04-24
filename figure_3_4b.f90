@@ -12,15 +12,9 @@ coup(500),xx,s1,s2,s3,w1,w2,w3,v1,v2,v3,u1,u2,u3,sumr,sumc,sump,error,e1
 
 
 eps1=0.00001d0;  ! threshold
-
-
-open(40,file='r_tseries.dat')
-open(41,file='c_tseries.dat')
-open(42,file='p_tseries.dat')
-!open(43,file='r16_bif.dat')
 open(44,file='error.dat')
 
-open(2,file='long_initial_condition.dat')
+open(2,file='initial_condition.dat')
  do i=1,n
 	read(2,*)R10(i),C10(i),P10(i)
  end do
@@ -42,14 +36,14 @@ do i= 1,n
 enddo
 
 open(20,file='figure_2d_2e_2f.dat')
-do j1=1,81
+do j1=1,73
    read(20,*)xx
    coup(j1)=xx
  end do
  close(20)
  
  
-do i1=1,81 
+do i1=1,73 
 	eps2=coup(i1)
 	print*, i1
 
@@ -136,49 +130,9 @@ do i1=1,81
 				P00(i)=P00(i)+(kP1(i)+2.0d0*kP2(i)+2.0d0*kP3(i)+kP4(i))*(h/6.0d0)
 			enddo
 			
-			t=t+h
+			t=t+h	
 			
-			!sumr=0.0;sumc=0.0;sump=0.0;
-			!do i=1,n
-				!sumr=sumr+R00(i)
-				!sumc=sumc+C00(i)
-				!sump=sump+P00(i)
-			!enddo
-			
-			!s3=s2
-			!s2=s1
-			!s1=sumr/n
-			
-			!w3=w2
-			!w2=w1
-			!w1=sumc/n
-			
-			!v3=v2
-			!v2=v1
-			!v1=sump/n
-			
-			!u3=u2
-			!u2=u1
-			!u1=R00(16)
-			
-			
-		if(mm.gt.tr) then
-			 	!if ((s2.gt.s3).and.(s2.gt.s1)) then
-			 		!write(40,*) eps2,s2
-			 	!endif
-			 	
-			 	!if ((w2.gt.w3).and.(w2.gt.w1)) then
-			 		!write(41,*) eps2,w2
-			 	!endif
-			 	
-			 	!if ((v2.gt.v3).and.(v2.gt.v1)) then
-			 		!write(42,*) eps2,v2
-			 	!endif
-			 	
-			 	!if ((u2.gt.u3).and.(u2.gt.u1)) then
-			 	!	write(43,*) eps2,u2
-			 	!endif
-			 	
+		if(mm.gt.tr) then			 	
 			 	error=0.0
 			 	do i=2,n
 			 		error=error+sqrt((R00(i)-R00(1))**2.0+(C00(i)-C00(1))**2.0+(P00(i)-P00(1))**2.0)
@@ -186,18 +140,10 @@ do i1=1,81
 			 		error=error/(n-1)
 			 		e1=e1+error
 		endif
-
-			write(40,*) t,(R00(i),i=1,n)
-			write(50,*) t,(C00(i),i=1,n)	
-			write(60,*) t,(P00(i),i=1,n)
-		
 			end do   !!! mm
 			write(44,*) eps2, e1/(nt-tr)
 			
 enddo !!!!! i1
- close(40)
- close(41)
- close(42)
- close(43) 
+ close(44) 
 
 end
