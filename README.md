@@ -1,4 +1,4 @@
-figure_3_4b.f90: The primary simulation has been used to observe the dynamical behavior of the proposed model and to calculate the synchronization errors.
+figure_4b.f90: The primary simulation has been used to calculate the synchronization errors of the proposed model.
 figure_1a.f90: Generates bifurcation diagrams for the uncoupled system to characterize local dynamics.
 figure_4c.f90: This code computes the Master Stability Function and the Maximum Lyapunov Exponent (MLE) to quantify system stability and chaos.
 figure_5a.f90: This code has been used to perform global stability analysis of the synchronized state by mapping basins of attraction.
