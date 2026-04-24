@@ -5,14 +5,7 @@ kR1,kR2,kR3,kR4,kC1,kC2,kC3,kC4,kP1,kP2,kP3,kP4,&
 R0,C0,K,z1,z2,z3,h,C00,R00,P00,R,C,P,fR,fC,fP,x1,x2,x3,y1,y2,y3
 integer:: i,j
 
-
 open (30, file= "p_bif.dat")
-!open (40, file= "pp_min.dat")
-!open (50, file= "R_bif.dat")
-!open(70,file='C_bif.dat')
-
-!xc=0.4;yc=2.009;R0=0.16129;xp=0.08;yp=2.876;C0=0.5
-
 
 do j= 0,1000
 	K=0.8+0.0002*j
@@ -57,14 +50,6 @@ do j= 0,1000
 	    
 		t=t+h
 		
-		!x3=x2
-		!x2=x1
-		!x1=R00
-		
-		!y3=y2
-		!y2=y1
-		!y1=C00
-		
 		z3 = z2
   		z2 = z1
   		z1 = P00
@@ -76,21 +61,6 @@ do j= 0,1000
 				write(30,*) K,z2
 				!print*, K,z2
 			end if
-			
-			!if((x2.gt.x3).and.(x2.gt.x1) )then
-			!	write(50,*) K,x2
-				!print*, K,z2
-			!end if
-			
-			!if((y2.gt.y3).and.(y2.gt.y1) )then
-			!	write(70,*) K,y2
-			!	!print*, K,z2
-			!end if
-		
-			!if((z2 .lt.z3).and.(z2 .lt. z1) )then
-		!		write(40,*) K,z2
-		!		!print*, K,z2
-		!	end if
 		endif
 		
 	end do !!!time
