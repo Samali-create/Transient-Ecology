@@ -1,4 +1,4 @@
-`!This program is for calculating error over global network:
+!This program is for calculating time series over global network:
 
 implicit none
 integer,parameter::n=20,nt=10000000,tr=9900000
