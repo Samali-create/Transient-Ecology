@@ -96,7 +96,6 @@
       if( (P10.gt.(0.0d0-0.001d0)).and.(P10.lt.(0.0d0+0.001d0)) ) then
         if(t0.gt.1000.0d0)then
             transient_time = t0
-            !write(123,*) C100,P100,t0 ! transient_time
         end if  
             exit
       end if    
