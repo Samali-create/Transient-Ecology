@@ -1,4 +1,4 @@
-This program is for epsilon_c vs epsilon_p and result: mean transient time (G1)
+!This program is for epsilon_c vs epsilon_p and result: mean transient time (G1)
      implicit none
 	 integer,parameter:: n=20, nt=10**7
      integer :: i,j,i1,j1,j2,ISEED,IRAND,TT,count(100),n,nt  
